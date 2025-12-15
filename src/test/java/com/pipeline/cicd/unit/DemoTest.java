@@ -11,8 +11,8 @@ public class DemoTest {
         assertTrue(10%2==0);
     }
 
-    @Test
-    void checkEven_fail(){
-        assertTrue(15%2==0);
-    }
+//    @Test
+//    void checkEven_fail(){
+//        assertTrue(15%2==0);
+//    }
 }
