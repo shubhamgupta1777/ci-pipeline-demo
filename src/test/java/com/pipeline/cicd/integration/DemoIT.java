@@ -18,14 +18,14 @@ public class DemoIT {
     @Test
     public void testEndpoint1() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.get("/api/hello"))
-                .andExpect(MockMvcResultMatchers.status().isOk())
+                .andExpect(MockMvcResultMatchers.status().isNotFound())
                 .andExpect(MockMvcResultMatchers.content().string("Hello Back"));
     }
 
     @Test
     public void testEndpoint2() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.get("/api/hello"))
-                .andExpect(MockMvcResultMatchers.status().isOk())
+                .andExpect(MockMvcResultMatchers.status().isNotFound())
                 .andExpect(MockMvcResultMatchers.content().string("Hello World"));
     }
 }
